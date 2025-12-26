@@ -1,0 +1,51 @@
+/**  
+  @file
+ mqtt_demo.h
+
+  @brief
+  This file provides the definitions for datacall demo, and declares the 
+  API functions.
+
+*/
+/*============================================================================
+  Copyright (c) 2020 Quectel Wireless Solution, Co., Ltd.  All Rights Reserved.
+  Quectel Wireless Solution Proprietary and Confidential.
+ =============================================================================*/
+/*===========================================================================
+
+                        EDIT HISTORY FOR MODULE
+
+This section contains comments describing changes made to the module.
+Notice that changes are listed in reverse chronological order.
+
+
+WHEN        WHO            WHAT, WHERE, WHY
+----------  ------------   ----------------------------------------------------
+
+=============================================================================*/
+
+#ifndef MQTT_DEMO_H
+#define MQTT_DEMO_H
+	#include"ilmCommon.h"
+		
+#ifdef __cplusplus
+		extern "C" {
+#endif
+		
+		
+		
+		/*========================================================================
+		 *	function Definition
+		 *========================================================================*/
+
+int ql_mqtt_app_init(void);
+extern uint8_t syncount;
+extern uint8_t gpscount;
+ extern mqttQueue_t publish_gps_data(void);
+		
+#ifdef __cplusplus
+		}/*"C" */
+#endif
+		
+#endif   /*DATACALL_DEMO_H*/
+

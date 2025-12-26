@@ -1,0 +1,10 @@
+
+1. Old Firmware (runing on module) -> 8915DM_cat1_old.pac [copy EC200SDK\target\EC200UCN_AA_APPIMAGE\8915DM_cat1_open_APPIMAGE_merge.pac to EC200SDK\tools\win32 & remame as 8915DM_cat1_old.pac]
+2. New Firmware (To be updated on module) -> 8915DM_cat1_new.pac [copy EC200SDK\target\EC200UCN_AA_APPIMAGE\8915DM_cat1_open_APPIMAGE_merge.pac to EC200SDK\tools\win32 & remame as 8915DM_cat1_new.pac]
+
+Open PowerShell Here and run below command. [EC200SDK\tools\win32]
+
+./dtools.exe fotacreate2 --pac 8915DM_cat1_old.pac,8915DM_cat1_new.pac,setting\fota8910.xml output.pack -d v
+
+output.pack file will generate in the same folder.
+Put that file in server for FOTA
